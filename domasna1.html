@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html>
+    <Head>
+        <meta charset = "utf -8">
+        <title>Pizza order</title>
+    </Head>
+
+    <body>
+        <center>
+            <h1><strong>Order pizza!</strong></h1>
+
+        <form method = "post" action = "https://pelisterhotel.com.mk/">
+            <p>
+                <strong>Select the pizza size:<br></strong>
+
+                <label>
+                    <input name = "pizza size" type="radio" 
+                    value = "Big"  checked>Big<br>
+                </label>
+
+                <label>
+                    <input name = "pizza size" type="radio"
+                    value = "Medium">Medium<br>
+                </label>
+
+                <label>
+                    <input name = "pizza size" type="radio"
+                    value = "Small">Small<br>
+                </label>
+            </p>
+
+            <p>
+                <label><strong>Select the crust type:</strong><br>
+                <select name = "rating">
+                    <option selected>Deep Dish</option>
+                    <option>Chicago style</option>
+                    <option>Gluten free</option>
+                    <option>Stuffed</option>
+                    <option>Neapolitan</option>
+                </select>
+                </label>
+            </p>
+
+            <p>
+                <strong>Select the filler:</strong><br>
+
+                <label>
+                    <input name = "filler" type="checkbox"
+                    value = "Mushrooms">Mushrooms<br>
+                </label>
+
+                <label>
+                    <input name = "filler" type="checkbox"
+                    value = "Sausages">Sausages<br>
+                </label>
+
+                <label>
+                    <input name = "filler" type="checkbox"
+                    value = "Pepper">Pepper<br>
+                </label>
+
+                <label>
+                    <input name = "filler" type="checkbox"
+                    value = "Extra cheese">Extra cheese<br>
+                </label>
+
+                <label>
+                    <input name = "filler" type="checkbox"
+                    value = "Arugula">Arugula<br>
+                </label>
+
+                <label>
+                    <input name = "filler" type="checkbox"
+                    value = "Basil">Basil<br>
+                </label>
+
+                <label>
+                    <input name = "filler" type="checkbox"
+                    value = "Onion">Onion<br>
+                </label>
+            </p>
+
+            <p>
+                <label> Name:
+                    <input name = "name" type = "text" size = "20" maxlength="30" required>
+                </label>
+            </p>
+
+            <p>
+                <label> Email:
+                    <input name = "Email" type = "password" size = "20" maxlength="40">
+                </label>
+            </p>
+
+            <p>
+                <label> Phone: 
+                    <input name = "phone" placeholder="(###)## ###-###"
+                    pattern="\(\d{3}\)\d{2} \d{3}-\d{3}" required>
+                </label>
+            </p>
+            
+
+            <p>
+                <label> Any comments: <br>
+                    <textarea type="comments" placeholder="Message..." rows="3" cols="35"></textarea>    
+                </label>
+            </p>
+
+            <p>
+                <input type = "submit" value = "Send">
+                <input type = "reset" value = "Reset">
+            </p>
+        </form>
+    </center>
+    </body>
+
+</html>
