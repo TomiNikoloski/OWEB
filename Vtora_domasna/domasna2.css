@@ -1,0 +1,37 @@
+h1 {font-size: 48px;
+    text-shadow: 3px 3px 3px rgb(239, 176, 176); 
+}
+    
+body { font-family: Arial, Helvetica;
+        color: rgb(17, 17, 16);
+        background-color: hwb(200 65% 17%); 
+    }
+
+select { text-decoration: underline;
+         color: rgb(18, 17, 17);
+        }
+
+p { text-shadow: 2px 2px 2px rgb(239, 176, 176); }
+
+div.background { background-image: url(pica.jpg), url(pica_quote.jpg);
+                 background-position: 3px 3px, bottom right;
+                 background-repeat: no-repeat, no-repeat;
+                 background-size: auto, 200px 180px;
+               }
+
+textarea { font-style: italic;
+           text-align: center;
+          }
+
+div.input:hover { text-decoration: underline;
+                  text-transform: uppercase;
+                  font-style: italic;
+        }
+
+input[type="submit"], input[type="reset"] {
+            border-radius: 30px;
+            background: linear-gradient(to left , rgb(167, 164, 165), rgb(239, 176, 176)); 
+            color: rgb(14, 14, 14);
+            padding: 8px 13px;
+        }
+
