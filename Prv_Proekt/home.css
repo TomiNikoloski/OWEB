@@ -1,0 +1,86 @@
+header {
+    font-family: "Calligraffitti";
+    font-size: 30px;
+    text-shadow: 3px 3px 3px DimGrey;
+    background-color: rgb(163, 208, 226);
+}
+
+footer {
+    font-family: "Calligraffitti";
+    background-color: rgb(163, 208, 226);
+    font-style: italic;
+    font-size: 20px;
+}
+
+.flexbox 
+{
+ width: 600px;
+ height: 535px;
+ display: -webkit-box;
+ display: box;
+ -webkit-box-orient: horizontal;
+ box-orient: horizontal;
+}
+.flexbox > div 
+{
+ -webkit-transition: 1s ease-out;
+ transition: 1s ease-out;
+ -webkit-border-radius: 10px;
+ border-radius: 10px;
+ border: 2px solid black;
+ width: 150px;
+ margin: 10px -10px 10px 0px;
+ padding: 20px 20px 20px 20px;
+ box-shadow: 10px 10px 10px dimgrey;
+}
+.flexbox > div:nth-child(1){ background-color: lightgrey; }
+.flexbox > div:nth-child(2){ background-color: lightgrey; }
+.flexbox > div:nth-child(3){ background-color: lightgrey; }
+
+.flexbox > div:hover { 
+ width: 200px; color: white; font-weight: bold; }
+.flexbox > div:nth-child(1):hover { background-color: royalblue; }
+.flexbox > div:nth-child(2):hover { background-color: crimson; }
+.flexbox > div:nth-child(3):hover { background-color: darkgreen; }
+
+nav {
+ font-family: Arial, Helvetica, sans-serif;
+ color: black;
+ border: 3px solid;
+ text-align: center;
+ width: 10em;
+ background-color: rgb(163, 208, 225);
+}
+
+nav ul  { 
+ display: none;
+ list-style: none;
+ margin: 0;
+ padding: 0; 
+}
+
+nav ul li {
+ border-top: 3px solid;
+ background-color: rgb(209, 217, 218);
+ color: white;
+ width: 10em;
+}
+
+nav ul li:hover {
+ background-color: rgb(152, 158, 158);
+}
+
+nav:hover ul    { 
+    display: block; 
+}
+
+div.lefttext {
+ position: absolute;
+}
+
+
+body {
+ background-color: rgb(227, 246, 246);
+}
+
+
