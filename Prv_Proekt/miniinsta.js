@@ -53,6 +53,24 @@ function updateLikees() {
 
 }
 
+function updateLikeess() {
+    const button = document.getElementById("likebutton4");
+    const likeCountElement = document.getElementById("likes4");
+    let likeCount = parseInt(likeCountElement.textContent);
+    if(button.textContent === "🤍"){
+        likeCount++;
+        document.getElementById("likes4").innerText = likeCount;
+        button.textContent = "❤️";
+    }
+    else{
+        likeCount--;
+        document.getElementById("likes4").innerText = likeCount;
+        button.textContent = "🤍";
+    }
+    likeCountElement.textContent = likeCount;
+
+}
+
 
 
 document.getElementById("likeButton1").addEventListener("click", () => {
@@ -66,6 +84,11 @@ document.getElementById("likeButton2").addEventListener("click", () => {
 document.getElementById("likeButton3").addEventListener("click", () => { //ova e za miniinstagram1.html, za da ne go dupliram JavaScript, a
     updateLikees()                                                            // funkcionalnosta im e ista sekako
 });
+
+document.getElementById("likeButton3").addEventListener("click", () => { //ova e za miniinstagram1.html, za da ne go dupliram JavaScript, a
+    updateLikees()                                                            // funkcionalnosta im e ista sekako
+});
+
 
 
 

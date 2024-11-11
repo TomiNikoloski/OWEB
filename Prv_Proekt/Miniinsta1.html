@@ -74,6 +74,61 @@
           });
            </script>
 
+        <div class="container">
+         <div class="row">
+          <div class="col-md-4">
+           <img src="old-bmw1.jpg" width="250" height="250" alt="Slika 1" class="img-fluid">
+          </div>
+         <div class="col-md-4">
+          <img src="old-bmw2.jpg" width="250" height="250" alt="Slika 2" class="img-fluid">
+         </div>
+         <div class="col-md-4">
+         <img src="old-bmw3.jpg" width="250" height="250" alt="Slika 3" class="img-fluid">
+           </div>
+          </div>
+        </div>
+
+        <center>
+          <button id="likebutton4" class="btn btn-info" onclick="updateLikeess()">🤍</button>
+                <p>Број на лајкови: <span id="likes4"> 678</span></p>
+    
+                <textarea id="com" placeholder="напиши коментар"></textarea><br>
+                <button id="btnn">Постирај</button>
+                <div class="comment" id="comment"></div>
+            </center>
+
+            <script>const Input = document.getElementById('com');
+              const Button = document.getElementById('btnn');
+              const comment = document.getElementById('comment');
+              
+              Button.addEventListener('click', () => {
+                const commentText = Input.value;
+                if (commentText.trim() !== '') {
+                  const newComment = document.createElement('li');
+                  newComment.textContent = commentText;
+            
+                  const deleteButton = document.createElement('button');
+                  deleteButton.textContent = 'Delete';
+                  deleteButton.style.marginLeft = '10px';
+    
+                  deleteButton.classList.add('delete-btn');
+              
+                  deleteButton.addEventListener('click', () => {
+                    comment.removeChild(newComment);
+                  });
+              
+                  newComment.appendChild(deleteButton);
+              
+    
+                  comment.appendChild(newComment);
+              
+    
+                  Input.value = '';
+                }
+              });
+               </script>
+
+
       <footer>
         <p>Ве очекуваме во некој од нашите салони во: , Охрид, Скопје(Карпош), Скопје(Кисела Вода).<br>
             Koнтакт тел: +389 72 777 888  или  +389 70 111 000</p>
