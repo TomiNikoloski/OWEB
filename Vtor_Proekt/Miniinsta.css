@@ -1,0 +1,43 @@
+header {
+    font-family: "Calligraffitti";
+    font-size: 30px;
+    text-shadow: 3px 3px 3px DimGrey;
+    background-color: rgb(163, 208, 226);
+}
+
+footer {
+    font-family: "Calligraffitti";
+    background-color: rgb(163, 208, 226);
+    font-style: italic;
+    font-size: 20px;
+}
+
+body {
+ background-color: rgb(227, 246, 246);
+}
+
+button {
+    background-color: rgb(127, 177, 215)
+}
+
+.comment {
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .delete-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px; 
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 13px;
+  }
+  
+  .delete-btn:hover {
+    background-color: darkred;
+  }
+  

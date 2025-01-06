@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Анкета</title>
+    <style type="text/css">
+        body   {  
+                      position: center;
+                      background-color:rgb(195, 193, 197);
+                   }
+   
+           input[type="submit"], input[type="reset"] {
+               border-radius: 30px;
+               background: linear-gradient(to bottom , rgb(167, 164, 165), rgb(239, 176, 176)); 
+               color: rgb(14, 14, 14);
+               padding: 8px 13px;
+               
+           }
+       textarea {
+           border-radius: 20px;
+           text-align: center;
+       }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+     <script type="text/javascript">
+        name = window.prompt("Ве молиме запишете го вашето име и презиме:");
+
+        document.writeln("<h1><strong>Добредојде " + name + ", Ве молиме да ја пополните оваа анкета.</strong></h1>");
+
+     </script>
+</head>
+
+<body style="text-align: center;">
+    <form method="post" action="Najava1.html">
+        <p>
+            <label>Е-пошта:
+                <input name = "Email" type = "email" placeholder="something@domain.com" size= "20" maxlength="40" required>
+            </label>
+        </p>
+
+        <p>
+            <strong>Какви се вашите импресии од сајтот?</strong><br>
+            <labe>
+                <input name = "impresii" type="radio" value="Одлични" checked>Одлични<br>
+             </labe>
+
+             <label>
+                <input name = "impresii" type="radio" value="Mн. добри">Мн. добри<br>
+             </label>
+
+             <label>
+                <input name = "impresii" type="radio" value="Добри">Добри<br>
+             </label>
+             <labe>
+                <input name = "impresii" type="radio" value="не се сјајни">Не се нешто сјајни<br>
+             </labe>
+
+             <label>
+                <input name = "impresii" type="radio" value="Мн.лоши">Мн. лоши<br>
+             </label>
+        </p>
+
+        <p>
+            <strong>Дали цените на автоболите се преголеми за наш стандард?</strong><br>
+            <labe>
+                <input name = "ceni" type="radio" value="da" checked>Да<br>
+             </labe>
+
+             <label>
+                <input name = "ceni" type="radio" value="ne">Не<br>
+             </label>
+        </p>
+
+        <p>
+            <strong>Дали закажавте термин за пробно возеље?</strong><br>
+            <labe>
+                <input name = "probno" type="radio" value="даа" checked>Да<br>
+             </labe>
+
+             <label>
+                <input name = "probno" type="radio" value="ne">Не<br>
+             </label>
+
+             <label>
+                <input name = "probno" type="radio" value="pomina vekje">Веќе бев на возење<br>
+             </label>
+        </p>
+
+        <p>
+            <label>Доколку одговоривте дека веќе сте биле, Ве молиме опишете со две-три реченици: <br>
+                <textarea type="comments" placeholder="Message..." rows="4" cols="35"></textarea>    
+            </label>
+        </p>
+
+        <p>
+            <input type = "submit" value = "Send">
+            <input type = "reset" value = "Reset">
+        </p>
+
+
+    </form>
+</body>
+

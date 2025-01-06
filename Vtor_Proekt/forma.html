@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>Форма за тест возење</title>
+   <style type="text/css">
+     body   {  
+                   position: center;
+                   background-color:rgb(195, 193, 197);
+                }
+
+        input[type="submit"], input[type="reset"] {
+            border-radius: 30px;
+            background: linear-gradient(to bottom , rgb(167, 164, 165), rgb(239, 176, 176)); 
+            color: rgb(14, 14, 14);
+            padding: 8px 13px;
+            
+        }
+    textarea {
+        border-radius: 20px;
+        text-align: center;
+    }
+   </style>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <center>
+    <script type="text/javascript">
+        var name;
+
+        name = window.prompt("Ве молиме запишете го вашето име и презиме:");
+
+        document.writeln("<h1><strong>Добредојде " + name + " во формата за закажување на тест возење</strong></h1>");
+  
+    </script></center>
+</head>
+<body>
+    <center>
+   
+
+    <form id="form "method="post" action="uspesnoZakazuvanje.html">
+        <p>
+            <strong>Која марка на автомобил сакате ја пробате?</strong><br>
+            
+             <labe>
+                <input name = "marka" type="radio" value="BMW" checked>BMW<br>
+             </labe>
+
+             <label>
+                <input name = "marka" type="radio" value="Mercedes">Mercedes<br>
+             </label>
+
+             <label>
+                <input name = "marka" type="radio" value="Audi">Audi
+             </label>
+        </p>
+
+        <p>
+            <strong>Дали сте полнолетен/полнолетна?</strong><br>
+
+            <label>
+                <input name="vozrast" type="radio" value="da" checked>Да
+            </label>
+
+            <label>
+                <input name="vozrast" type="radio" value="da">Не
+            </label>
+        </p>
+
+        <p>
+            <strong>Дали имате возачка дозвола?</strong><br>
+            <label>
+                <input name="dozvola" type="radio" value="da" checked>Да
+            </label>
+
+            <label>
+                <input name="dozvola" type="radio" value="da">Не
+            </label>
+        </p>
+
+        <p>
+            <label>Одберете датум:
+               <input id="date" type = "date" required/> 
+            </label>
+         </p>
+
+         <p id="mssg"></p>
+
+        <p>
+            <label>Е-пошта:
+                <input name = "Email" type = "email" placeholder="something@domain.com" size= "20" maxlength="40">
+            </label>
+        </p>
+
+        <p>
+            <label>Телефон: 
+                <input name = "phone" placeholder="(###)## ###-###"
+                pattern="\(\d{3}\)\d{2} \d{3}-\d{3}" required>
+            </label>
+        </p>
+
+        <p>
+            <label> Koментари: <br>
+                <textarea type="comments" placeholder="Message..." rows="3" cols="35"></textarea>    
+            </label>
+        </p>
+
+        <p>
+            <input type = "submit" value = "Send">
+            <input type = "reset" value = "Reset">
+        </p>
+
+    </form>
+    </center>
+</body>
